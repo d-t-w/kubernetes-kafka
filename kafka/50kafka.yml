@@ -84,10 +84,6 @@ spec:
             # the entire Yolean/kubernetes-kafka is meant to be tweaked
             # before you run production workloads
             memory: 600Mi
-        readinessProbe:
-          tcpSocket:
-            port: 9092
-          timeoutSeconds: 1
         volumeMounts:
         - name: config
           mountPath: /etc/kafka
